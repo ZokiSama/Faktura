@@ -1,0 +1,11 @@
+body {
+    margin: 5px;
+}
+
+#titel {
+}
+
+.BillInfo {
+    display: block;
+    background-color: azure;
+}
