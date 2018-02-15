@@ -1,0 +1,65 @@
+body {
+    background: #003629;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.send_rec h3{
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+.wrapper {    
+    background-color: aliceblue;
+    max-width: 900px;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px;
+    padding: 20px;
+    margin: 60px auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.left {
+    grid-column: 1;
+}
+
+.middle {
+    grid-column: 2;
+}
+
+.right {
+    grid-column: 3;
+}
+
+.right_extra {
+    grid-column: 4;
+}
+.border {
+    border: solid #000;
+}
+
+.span_right {
+    float: right;
+    text-align: right;
+}
+
+.information {
+    margin-top: 20px;
+}
+
+.information h4{
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.service_top {
+}

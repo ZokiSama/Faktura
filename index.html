@@ -4,55 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fakturering</title>
-    <link rel="stylesheet" href="main.css">
+    <title>Faktura</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
-    <section class="fakturaBox">
-        <section class="rader">
-            <header class="rad_1 omfang">
-                <div class="logo"><img src="img/logo.png" alt="Foretags logo" id="foretagIMG"></div>
-                <div class="fakturaMarkt"><h1>FAKTURA</h1></div>
-            </header>
+    <div class="wrapper">
 
-            <section class="rad_2 omfang">
-                <div class="fakturaInfo inforuta">
-                    <span class="ledTxt" id>Fakturanummer:</span>
-                    <span class="txthoger" id="fakturaNr">99993</span>
-                    <br>
-                    <span class="ledTxt" id>OCR-Nummer:</span>
-                    <span class ="txthoger">343092309235</span>
-                    <br>
-                    <span class="ledTxt" id>Fakturadatum:</span>
-                    <span class="txthoger">14 Feb 2018</span>
-                    <br>
-                    <span class="ledTxt" id>Kundnummer:</span>
-                    <span class="txthoger">09235</span>
-                </div>
-
-                <div class="tomRuta"></div>
-
-                <div class="kundAdress inforuta">
-                    <span id="kundnamn">Kalle Sturesson</span>
-                    <br>
-                    <span id="adress">Köpingegatan 13</span>
-                    <br>
-                    <span id="postnummer">234 54</span>
-                    <span id="postOrt" class="txthoger">Törnsjö</span>
-                </div>
-
+        <header class="grid">
+            <div class="head_Logo left">
+                <img src="img/logo.png" alt="Company Logo">
+            </div>
+            <div class="invoice_Info right">
+                <p>Fakturanummer: <span class="span_right" id="fakturanr">2456</span></p>
+                <p>Fakturadatum: <span class="span_right" id="fakturadtm">2018-02-15</span></p>
+                <p>Förfallodatum: <span class="span_right" id="forfallodtm">2018-03-01</span></p>
+            </div>
+        </header>
+        
+        <div class="send_rec grid">
+            <section class="sender left">
+                <h3>Avsändare</h3>
+                <p><span id="namn">Namn</span></p>
+                <p><span id="addr">Address</span></p>
+                <p><span id="postNr">PostNr</span> <span id="ort">Ort</span></p>
             </section>
-    
-            <section class="rad_3 omfang">
-                <div class="tjanstRuta inforuta">
-                    <span id="attBetala">Summa att betala</span>
-                    <span id="totalSumma" class="txthoger">385 Kr</span>
-                    <br><hr>
-                    <span id="tillHanda">Betalning oss tillhanda</span>
-                    <span id="tillHanda_Datum" class="txthoger">28 Feb 2018</span>
+            <section class="reciver right">
+                <h3>Mottagare</h3>
+                <p><span id="kun_Namn">Namn</span></p>
+                <p><span id="kun_Addr">Address</span></p>
+                <p><span id="kun_PostNr">PostNr</span> <span id="kun_Ort">Ort</span></p>
+            </section>
+        </div>
+        <hr>
+        <div class="information grid">
+            <section class="left">
+                <h4>Referens</h4>
+                <p>Joakim Hall</p>
+                <h4>Er Referens</h4>
+                <p>Kunds Referens</p>
+                <h4>Betalningsvilkor</h4>
+                <p>15 dagar</p>
+            </section>
+
+            <section class="middle">
+                <h4>Referens</h4>
+                <p>Joakim Hall</p>
+                <h4>Er Referens</h4>
+                <p>Kunds Referens</p>
+                <h4>Betalningsvilkor</h4>
+                <p>15 dagar</p>
+            </section>
+
+            <section class="right">
+                <h4>Kundnummer</h4>
+                <p>Joakim Hall</p>
+                <h4>OCR-/Ordernummer</h4>
+                <p>Kunds Referens</p>
+                <h4>Ert VAT-Nummer</h4>
+                <p>15 dagar</p>
+            </section>
+        </div>
+        <hr>
+        <div class="service grid border">
+            <!-- Header -->
+            <section class="service_top grid">
+                <div class="grid">
+                    <div class="left"><p>Tjänst</p></div>
+                    <div class="middle"><p>Beskrivning</p></div>
+                    <div class="right span_right"><p>&Aacute;-pris</p></div>
+                    <div class="right_extra span_right"><p>Belopp(SEK)</p></div>
+                </div>
+            <!-- Vara -->
+                <div class="grid">
+                    <div class="left"><p>Design</p></div>
+                    <div class="middle"><p>Implementerat CSS och korigerat HTML</p></div>
+                    <div class="right span_right"><p>500</p></div>
+                    <div class="right_extra span_right"><p>680 kr</p></div>
                 </div>
             </section>
-        </section>
-    </section>
+        </div>
+
+        <footer class="order">
+
+        </footer>
+
+    </div>
 </body>
 </html>
