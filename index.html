@@ -8,30 +8,51 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <section id="titel"><p>FAKTURA</p></section>
+    <section class="fakturaBox">
+        <section class="rader">
+            <header class="rad_1 omfang">
+                <div class="logo"><img src="img/logo.png" alt="Foretags logo" id="foretagIMG"></div>
+                <div class="fakturaMarkt"><h1>FAKTURA</h1></div>
+            </header>
 
-    <header>
-        <div class="company_Logo"><p>Joakim AB</p></div>
-        <div class="bill_Info">
-            <p>Fakturadatum</p>
-            <p>OCR/Fakturanummer</p>
-            <p>Belopp</p>
-            <p>Oss tillhanda</p>
-            <p>Kundnummer</p>
-        </div>
-    </header>
+            <section class="rad_2 omfang">
+                <div class="fakturaInfo inforuta">
+                    <span class="ledTxt" id>Fakturanummer:</span>
+                    <span class="txthoger" id="fakturaNr">99993</span>
+                    <br>
+                    <span class="ledTxt" id>OCR-Nummer:</span>
+                    <span class ="txthoger">343092309235</span>
+                    <br>
+                    <span class="ledTxt" id>Fakturadatum:</span>
+                    <span class="txthoger">14 Feb 2018</span>
+                    <br>
+                    <span class="ledTxt" id>Kundnummer:</span>
+                    <span class="txthoger">09235</span>
+                </div>
 
-    <section class="contact_Info">
-        <details></details>
-        <section>
-            <p>namn</p>
-            <p>adress</p>
-            <p>postnr / Ort</p>
-        </section>        
-    </section>
+                <div class="tomRuta"></div>
 
-    <section class="bill_Overview">
+                <div class="kundAdress inforuta">
+                    <span id="kundnamn">Kalle Sturesson</span>
+                    <br>
+                    <span id="adress">Köpingegatan 13</span>
+                    <br>
+                    <span id="postnummer">234 54</span>
+                    <span id="postOrt" class="txthoger">Törnsjö</span>
+                </div>
 
+            </section>
+    
+            <section class="rad_3 omfang">
+                <div class="tjanstRuta inforuta">
+                    <span id="attBetala">Summa att betala</span>
+                    <span id="totalSumma" class="txthoger">385 Kr</span>
+                    <br><hr>
+                    <span id="tillHanda">Betalning oss tillhanda</span>
+                    <span id="tillHanda_Datum" class="txthoger">28 Feb 2018</span>
+                </div>
+            </section>
+        </section>
     </section>
 </body>
 </html>
