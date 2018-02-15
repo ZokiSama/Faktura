@@ -23,6 +23,11 @@ p {
     margin: 60px auto;
 }
 
+.head_Logo img {
+    height: auto;
+    max-width: 100%;
+}
+
 .grid {
     display: grid;
     grid-template-rows: auto;
