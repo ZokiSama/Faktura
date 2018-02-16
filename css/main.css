@@ -89,11 +89,13 @@ table {
 
 .qr_style img {
     padding: 5px;
-    width: 61px;
+    width: 120px;
 } 
 
 .totalQR {
-    background-color: #cfcfcf;
     text-align: center;
-    width: 120px;
+    width: auto;
+    max-width: 150px;
+    font-size: 15px;
+    font-weight: bolder;
 }
