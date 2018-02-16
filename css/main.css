@@ -1,25 +1,34 @@
 body {
-    background: #003629;
+    background: #2c5c51;
     height: 100%;
     font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
     margin: 0;
     padding: 0;
 }
 
+.send_rec {
+    padding-bottom: 40px;
+}
 .send_rec h3{
-    margin: 0;
+    margin: 0; 
 }
 
 p {
     margin: 0;
 }
 
-.wrapper {    
-    background-color: aliceblue;
+.wrapper { 
+    background-color: #fff; 
     max-width: 900px;
     border-radius: 5px;
     padding: 20px;
     margin: 60px auto;
+    margin-top: 5px;
+}
+
+.head_Logo{
+    text-align: center
 }
 
 .head_Logo img {
@@ -27,9 +36,12 @@ p {
     max-width: 100%;
 }
 
+header {
+    padding-bottom: 40px;
+}
+
 .grid {
     display: grid;
-    grid-template-rows: auto;
 }
 
 .left {
@@ -44,16 +56,18 @@ p {
     grid-column: 3;
 }
 
-.right_extra {
-    grid-column: 4;
-}
 .border {
-    border: solid #000;
+    margin-top: 30px;
+    border: solid 1px #000;
 }
 
 .span_right {
-    float: right;
     text-align: right;
+}
+
+.description {
+    font-style: italic;
+    text-align: center;
 }
 
 .information {
@@ -65,5 +79,21 @@ p {
     margin-bottom: 0;
 }
 
-.service_top {
+table {
+    width: 100%;
+}
+
+.tr_head {
+    background-color: #a5a5a5;
+}
+
+.qr_style img {
+    padding: 5px;
+    width: 61px;
+} 
+
+.totalQR {
+    background-color: #cfcfcf;
+    text-align: center;
+    width: 120px;
 }

@@ -13,7 +13,7 @@
 
         <header class="grid">
             <div class="head_Logo left">
-                <img src="img/logo.png" alt="Company Logo">
+                <h1>Zoki Productions</h1>
             </div>
             <div class="invoice_Info right">
                 <p>Fakturanummer: <span class="span_right" id="fakturanr">2456</span></p>
@@ -36,7 +36,7 @@
                 <p><span id="kun_PostNr">PostNr</span> <span id="kun_Ort">Ort</span></p>
             </section>
         </div>
-        <hr>
+
         <div class="information grid">
             <section class="left">
                 <h4>Referens</h4>
@@ -63,25 +63,98 @@
                 <p>20-45874-14</p>
             </section>
         </div>
-        <hr>
-        <div class="service grid border">
-            <!-- Header -->
-            <section class="service_top grid">
-                <div class="grid">
-                    <div class="left"><p>Tjänst</p></div>
-                    <div class="middle"><p>Beskrivning</p></div>
-                    <div class="right span_right"><p>&Aacute;-pris</p></div>
-                    <div class="right_extra span_right"><p>Belopp(SEK)</p></div>
-                </div>
-            <!-- Vara -->
-                <div class="grid">
-                    <div class="left"><p>Design</p></div>
-                    <div class="middle"><p>Implementerat CSS och korigerat HTML</p></div>
-                    <div class="right span_right"><p>500</p></div>
-                    <div class="right_extra span_right"><p>680 kr</p></div>
-                </div>
-            </section>
+        <!--<div class="service grid border">-->
+        <div class="border">
+            <table>
+                <!-- Header -->
+                <tr class="tr_head">
+                    <th>Tjänst</th>
+                    <th>Beskrivning</th>
+                    <th class="span_right">&Aacute;-pris</th>
+                    <th class="span_right">Belopp(SEK)</th>
+                </tr>
+                <!-- Vara -->
+                <tr id="service_order">
+                    <td>Design</td>
+                    <td class="description">Implementerat CSS och korigerat HTML</td>
+                    <td class="span_right">680</td>
+                    <td class="span_right">680 kr</td>
+                </tr>
+                <!-- Totaler -->
+            </table>
         </div>
+
+        <section>
+                <div class="information grid">
+                        <section class="left">
+                            <table>
+                                <tr>
+                                    <td>Momsunderlag</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Moms 25%</td>
+                                    <td>680kr</td>
+                                </tr>
+                                <tr>
+                                    <td>Moms 12%</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Moms 6%</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Momsfritt</td>
+                                    <td></td>
+                                </tr>
+                            </table>
+                            <!--
+                            <h4>Momsunderlag</h4>
+                            <p>Moms 25%<span class="span_right" id="tjugofem_procent">680</span></p>
+                            <p>Moms 12%<span class="span_right" id="tolv_procent"></span></p>          
+                            <p>Moms 6%<span class="span_right" id="sex_procent"></span></p>
+                            <p>Momsfritt<span class="span_right" id="fritt"></span></p>
+                            -->
+                        </section>
+
+                        <section class="middle">
+                            <table>
+                                <tr>
+                                    <td>Expeditionsavgift</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Belopp före moms</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>Total moms</td>
+                                    <td>170</td>
+                                </tr>
+                            </table>
+                            <!--
+                            <p>Expeditionsavgift<span class="span_right" id="tjugofem_procent"></span></p>                            
+                            <p>Belopp före moms<span class="span_right" id="tjugofem_procent"></span></p>                            
+                            <p>Total moms<span class="span_right" id="tjugofem_procent"></span></p>
+                            <h3>Att Betala (SEK)<span class="span_right" id="tjugofem_procent"></span></h3>
+                            -->
+                        </section>
+                        <section class="right totalQR">
+                            <table class="QRsumBox">
+                                <tr>
+                                    <td colspan=2 id="qrCode" class="qr_style">
+                                        <img src="img/randomQR.png">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Att Betala</td>
+                                    <td id="total_summa">850</td>
+                                </tr>
+                            </table>
+                        </section>
+                    </div>
+        </section>
 
         <footer class="order">
 
